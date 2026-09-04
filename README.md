@@ -25,3 +25,8 @@ This is a static HTML/CSS/JavaScript starter site for ParentStayHome.com.
 - Review Privacy and Terms/Disclaimer pages.
 - Confirm all provider links and phone numbers one more time.
 - Decide whether to index immediately or use a temporary noindex while final polish is completed.
+
+
+## Polish Pass 2
+
+Updated provider data from Rev 7 CSV, added homepage resource search, preserved searchable listing pages, and refreshed listing cards from the corrected Master Directory.

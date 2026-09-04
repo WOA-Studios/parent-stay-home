@@ -54,6 +54,18 @@
     listingHeading.insertAdjacentElement('afterend', panel);
   }
 
+  function applyQueryParam(){
+    const search = document.querySelector('[data-search]');
+    if(!search) return;
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q');
+    if(q && !search.value){
+      search.value = q;
+      const target = document.querySelector('[data-search]');
+      if(target){ setTimeout(function(){ target.focus({preventScroll:true}); }, 10); }
+    }
+  }
+
   function setupFilters(){
     const search = document.querySelector('[data-search]');
     const select = document.querySelector('[data-category-filter]');
@@ -96,6 +108,7 @@
   document.addEventListener('DOMContentLoaded', function(){
     formatMetaBlocks();
     ensureSearchPanel();
+    applyQueryParam();
     setupFilters();
   });
 })();

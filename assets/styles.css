@@ -6,3 +6,10 @@
 .search-label{display:block;font-weight:800;margin-bottom:6px;color:var(--charcoal)}
 .search-panel input{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:14px;background:white;color:var(--ink);font:inherit}.search-hint{margin:8px 0 0}.filter-status{margin:4px 0 16px;font-weight:700;color:var(--sage-dark)}
 .meta span{display:block}.meta-lines{line-height:1.55}.mini-list{margin:6px 0 0;padding-left:18px}.mini-list li{margin:3px 0}.meta div{overflow-wrap:anywhere}
+
+.home-search{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;margin:24px 0 0;box-shadow:0 6px 20px rgba(31,41,39,.05)}
+.home-search label{display:block;font-weight:800;margin-bottom:8px;color:var(--charcoal)}
+.home-search-row{display:flex;gap:10px;align-items:center}
+.home-search-row input{flex:1;min-width:180px;padding:13px 14px;border:1px solid var(--line);border-radius:999px;background:white;color:var(--ink);font:inherit}
+.home-search-row .btn{border:0;cursor:pointer;white-space:nowrap}
+@media(max-width:700px){.home-search-row{flex-direction:column;align-items:stretch}.home-search-row .btn{width:100%}}
