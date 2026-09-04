@@ -30,3 +30,9 @@ This is a static HTML/CSS/JavaScript starter site for ParentStayHome.com.
 ## Polish Pass 2
 
 Updated provider data from Rev 7 CSV, added homepage resource search, preserved searchable listing pages, and refreshed listing cards from the corrected Master Directory.
+
+
+## Polish Pass 3
+- Shifted accent color from green to a calm, soulful blue.
+- Added homepage “Where to start” decision cards.
+- Added common-search chips beneath the homepage search field.
