@@ -36,3 +36,10 @@ Updated provider data from Rev 7 CSV, added homepage resource search, preserved 
 - Shifted accent color from green to a calm, soulful blue.
 - Added homepage “Where to start” decision cards.
 - Added common-search chips beneath the homepage search field.
+
+
+## Polish Pass 4
+- Updated provider data from Rev 8 FinalAudit workbook.
+- Excluded listings marked `Do Not Publish` from public site data.
+- Preserved homepage search, “Where to start” cards, blue accents, address formatting, and eligibility/cost bullet formatting.
+- Added a site-ready Rev 8 CSV copy in `assets/`.
