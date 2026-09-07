@@ -16,3 +16,7 @@ Update package for ParentStayHome.com.
 ## Deploy
 Upload the extracted contents to the existing GitHub repository root and allow replacements.
 Suggested commit message: `Improve Important Papers Checklist fields`
+
+## Update: Home Safety Checklist tool
+
+Adds a full Home Safety Checklist web tool and downloadable blank PDF at `/get-organized/home-safety-checklist/`. Includes local-only form fields, room-by-room checklist, quick safety scan, action tracker, print/save support, and safety/professional-help notes.
