@@ -44,3 +44,6 @@
 .check-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px;margin:12px 0 18px}.check-grid label{display:flex;gap:10px;align-items:flex-start;background:var(--soft);border-radius:14px;padding:10px 12px;font-weight:650}.check-grid input{margin-top:5px;accent-color:var(--sage-dark)}
 @media(max-width:760px){.check-grid{grid-template-columns:1fr}}
 @media print{.check-grid{grid-template-columns:repeat(2,1fr);gap:6px}.check-grid label{border:1px solid #bbb;background:#fff;padding:6px;font-size:10pt}.check-grid input{width:12px;height:12px}}
+
+.overflow-notes{margin-top:18px}.overflow-notes label{font-weight:800;color:var(--charcoal);display:grid;gap:8px}.overflow-notes textarea{width:100%;border:1px solid var(--line);border-radius:14px;background:#fff;color:var(--ink);font:inherit;padding:12px 13px;resize:vertical;min-height:96px}.priority-now-option{color:#b42318;font-weight:800}.entry-table select.priority-now-selected{border-color:#b42318;background:#fff4f2;color:#8a1f14;font-weight:800;box-shadow:0 0 0 2px rgba(180,35,24,.12)}
+@media print{.overflow-notes textarea{border:1px solid #999;border-radius:6px;background:#fff;min-height:80px}.entry-table select.priority-now-selected{border-color:#999;background:#fff;color:#111;box-shadow:none}}

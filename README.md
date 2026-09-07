@@ -20,3 +20,7 @@ Suggested commit message: `Improve Important Papers Checklist fields`
 ## Update: Home Safety Checklist tool
 
 Adds a full Home Safety Checklist web tool and downloadable blank PDF at `/get-organized/home-safety-checklist/`. Includes local-only form fields, room-by-room checklist, quick safety scan, action tracker, print/save support, and safety/professional-help notes.
+
+## Update: Home Safety Checklist v2
+
+Capitalizes Quick Safety Scan, changes Room-by-Room styling, adds an overflow notes box, and highlights the Action Tracker priority option Now in red when selected. Updates the downloadable PDF to match.

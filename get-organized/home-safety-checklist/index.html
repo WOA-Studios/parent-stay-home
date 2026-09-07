@@ -51,7 +51,7 @@
     </section>
 
     <section class="tool-card">
-      <h2>Quick safety scan</h2>
+      <h2>Quick Safety Scan</h2>
       <p class="tool-note">Check anything that may need a closer look. This is not a professional inspection. It is a starting point for noticing concerns and deciding what to ask about next.</p>
       <div class="notice safety-note"><strong>Safety note:</strong> If there is an immediate danger, such as a recent fall, fire risk, gas smell, unsafe electrical issue, wandering risk, or urgent medical concern, contact emergency services, the appropriate utility, or a qualified professional right away.</div>
       <div class="check-grid">
@@ -66,10 +66,13 @@
         <label><input type="checkbox"> No clear emergency contact list or visible medical information</label>
         <label><input type="checkbox"> No safe plan for pets, keys, or home access during an emergency</label>
       </div>
+      <div class="overflow-notes">
+        <label>Additional safety concerns or notes<textarea class="auto-grow" rows="3" placeholder="Add anything else you notice, even if it is not listed above."></textarea></label>
+      </div>
     </section>
 
     <section class="tool-card">
-      <h2>Room-by-room checklist</h2>
+      <h2>Room-by-Room Checklist</h2>
       <p class="tool-note">Use these prompts to walk through the home. Mark what needs attention and write notes for the next call, repair, family discussion, or professional visit.</p>
       <div class="responsive-table">
         <table class="entry-table" id="roomSafetyTable">
@@ -96,14 +99,14 @@
       <p class="tool-note">Use this table to turn concerns into manageable next steps. Start with what is most urgent or most likely to affect safety.</p>
       <div class="notice safety-note"><strong>Professional help note:</strong> For repairs, electrical work, plumbing, ramps, stair lifts, medical equipment, medication concerns, or major home modifications, contact an appropriate qualified professional. This checklist does not replace professional advice, assessment, or inspection.</div>
       <div class="responsive-table">
-        <table class="entry-table" id="actionTable">
+        <table class="entry-table action-tracker-table" id="actionTable">
           <thead>
             <tr><th>#</th><th>Concern</th><th>Priority</th><th>Who to call / ask</th><th>Next step / notes</th></tr>
           </thead>
           <tbody>
-            <tr><td>1</td><td><textarea rows="1" class="auto-grow"></textarea></td><td><select><option>Choose</option><option>Now</option><option>Next</option><option>Later</option><option>Not sure</option></select></td><td><textarea rows="1" class="auto-grow"></textarea></td><td><textarea rows="1" class="auto-grow"></textarea></td></tr>
-            <tr><td>2</td><td><textarea rows="1" class="auto-grow"></textarea></td><td><select><option>Choose</option><option>Now</option><option>Next</option><option>Later</option><option>Not sure</option></select></td><td><textarea rows="1" class="auto-grow"></textarea></td><td><textarea rows="1" class="auto-grow"></textarea></td></tr>
-            <tr><td>3</td><td><textarea rows="1" class="auto-grow"></textarea></td><td><select><option>Choose</option><option>Now</option><option>Next</option><option>Later</option><option>Not sure</option></select></td><td><textarea rows="1" class="auto-grow"></textarea></td><td><textarea rows="1" class="auto-grow"></textarea></td></tr>
+            <tr><td>1</td><td><textarea rows="1" class="auto-grow"></textarea></td><td><select><option>Choose</option><option class="priority-now-option" value="Now">Now</option><option>Next</option><option>Later</option><option>Not sure</option></select></td><td><textarea rows="1" class="auto-grow"></textarea></td><td><textarea rows="1" class="auto-grow"></textarea></td></tr>
+            <tr><td>2</td><td><textarea rows="1" class="auto-grow"></textarea></td><td><select><option>Choose</option><option class="priority-now-option" value="Now">Now</option><option>Next</option><option>Later</option><option>Not sure</option></select></td><td><textarea rows="1" class="auto-grow"></textarea></td><td><textarea rows="1" class="auto-grow"></textarea></td></tr>
+            <tr><td>3</td><td><textarea rows="1" class="auto-grow"></textarea></td><td><select><option>Choose</option><option class="priority-now-option" value="Now">Now</option><option>Next</option><option>Later</option><option>Not sure</option></select></td><td><textarea rows="1" class="auto-grow"></textarea></td><td><textarea rows="1" class="auto-grow"></textarea></td></tr>
           </tbody>
         </table>
       </div>
@@ -127,6 +130,10 @@
     if(!field || field.tagName !== 'TEXTAREA') return;
     field.style.height = 'auto';
     field.style.height = Math.max(field.scrollHeight, 42) + 'px';
+  }
+  function updatePriorityVisual(select){
+    if(!select || !select.closest('.action-tracker-table')) return;
+    select.classList.toggle('priority-now-selected', select.value === 'Now');
   }
   function moveToNextRowField(target){
     const cell = target.closest('td');
@@ -154,13 +161,14 @@
     const firstRow = tbody.querySelector('tr');
     const row = firstRow.cloneNode(true);
     row.querySelectorAll('input, textarea').forEach(function(input){ input.value = ''; autoGrow(input); });
-    row.querySelectorAll('select').forEach(function(select){ select.selectedIndex = 0; });
+    row.querySelectorAll('select').forEach(function(select){ select.selectedIndex = 0; updatePriorityVisual(select); });
     tbody.appendChild(row);
     renumberTable(table);
     const firstField = row.querySelector('textarea, input, select');
     if(firstField) firstField.focus();
   });
   document.addEventListener('input', function(event){ if(event.target.matches('textarea.auto-grow, .entry-table textarea')) autoGrow(event.target); });
+  document.addEventListener('change', function(event){ if(event.target.matches('.action-tracker-table select')) updatePriorityVisual(event.target); });
   document.addEventListener('keydown', function(event){
     const target = event.target;
     if(!target.closest || !target.closest('.entry-table')) return;
@@ -169,6 +177,7 @@
     moveToNextRowField(target);
   });
   document.querySelectorAll('textarea.auto-grow, .entry-table textarea').forEach(autoGrow);
+  document.querySelectorAll('.action-tracker-table select').forEach(updatePriorityVisual);
 })();
 </script>
 </body>
