@@ -1,20 +1,17 @@
-# Parent Stay Home V1 - Emergency Information Tool
+# Parent Stay Home V1 - Important Papers Checklist update
 
-This package adds the Parent Emergency Information Sheet to the existing Parent Stay Home static site.
+This package adds the Important Papers Checklist as the second Get Organized tool.
 
-## What changed
+What changed:
+- Replaces the placeholder Important Papers page with a full local-only web tool.
+- Adds a downloadable blank PDF at `/assets/downloads/Important_Papers_Checklist_for_Aging_Parents.pdf`.
+- Includes a document tracker table and add-another-row functionality on the web page.
+- Adds privacy, legal, financial, medical, benefits, digital-access, and sensitive-information safety notes.
+- Preserves the current Parent Stay Home site structure, Rev 8 listing data, search behavior, blue accents, and emergency information tool.
 
-- Replaces the placeholder Parent Emergency Information Sheet page with a full local-only HTML tool.
-- Adds a Download Blank PDF button.
-- Adds a Print / Save as PDF button.
-- Adds privacy language explaining that Parent Stay Home does not receive, save, or store information typed into the tool.
-- Adds a blank printable PDF at `/assets/downloads/Parent_Emergency_Information_Sheet.pdf`.
-- Preserves the existing directory, search, provider submission, privacy, and styling updates.
-
-## Deployment
-
-Upload all extracted files and folders to the existing `parent-stay-home` GitHub repository root, replacing existing files when prompted.
-
-Suggested commit message:
-
-`Add Parent Emergency Information Sheet`
+Deploy:
+1. Extract the ZIP.
+2. Upload the extracted contents to the existing `parent-stay-home` GitHub repository root.
+3. Allow GitHub to replace existing files.
+4. Commit with: `Add Important Papers Checklist tool`.
+5. Let Cloudflare redeploy automatically.
