@@ -45,20 +45,28 @@
         <label>Date of birth<input type="text"></label>
         <label>Primary phone<input type="text"></label>
         <label>Lives alone?<input type="text" placeholder="Yes / No / Sometimes"></label>
-        <label class="wide">Home address<textarea rows="2"></textarea></label>
+        <label class="wide">Street address<input type="text" autocomplete="off"></label>
+        <label>City<input type="text" autocomplete="off"></label>
+        <label>State / ZIP<input type="text" autocomplete="off"></label>
       </div>
     </section>
 
     <section class="tool-card">
       <h2>Emergency contacts</h2>
-      <div class="form-grid two-col">
-        <label>Contact 1 - name / relationship<input type="text"></label>
-        <label>Phone / email<input type="text"></label>
-        <label>Contact 2 - name / relationship<input type="text"></label>
-        <label>Phone / email<input type="text"></label>
-        <label>Contact 3 - name / relationship<input type="text"></label>
-        <label>Phone / email<input type="text"></label>
+      <p class="tool-note">List more than one person whenever possible. If the first contact cannot be reached, emergency responders, care teams, or helpers may need another trusted person to call.</p>
+      <div class="responsive-table">
+        <table class="entry-table" id="contactsTable">
+          <thead>
+            <tr><th>#</th><th>Name</th><th>Relationship</th><th>Phone</th><th>Email / notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td>2</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td>3</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          </tbody>
+        </table>
       </div>
+      <button class="btn secondary add-row-btn" type="button" data-table="contactsTable">Add another contact</button>
     </section>
 
     <section class="tool-card">
@@ -77,8 +85,25 @@
 
     <section class="tool-card">
       <h2>Medications and allergies</h2>
+      <p class="tool-note">Include prescription medications, over-the-counter medicines, vitamins, supplements, eye drops, injections, patches, inhalers, and anything taken as needed.</p>
+      <div class="notice safety-note"><strong>Medication safety note:</strong> This sheet is for organizing information only. Do not start, stop, change, combine, or skip medications without speaking with the prescribing doctor, pharmacist, or another qualified healthcare professional.</div>
+      <div class="responsive-table">
+        <table class="entry-table" id="medicationsTable">
+          <thead>
+            <tr><th>#</th><th>Medication name</th><th>Dosage / strength</th><th>Frequency</th><th>Time of day</th><th>Purpose / notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td>2</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td>3</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td>4</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td>5</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td>6</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <button class="btn secondary add-row-btn" type="button" data-table="medicationsTable">Add another medication row</button>
       <div class="form-grid">
-        <label>Current medications, dose, and schedule<textarea rows="5"></textarea></label>
         <label>Allergies or reactions<textarea rows="3"></textarea></label>
         <label>Medical conditions or notes emergency responders should know<textarea rows="3"></textarea></label>
       </div>
@@ -86,6 +111,7 @@
 
     <section class="tool-card">
       <h2>Insurance and important documents</h2>
+      <p class="tool-note">Use this section to know where information is kept. Share account numbers, IDs, and legal documents only with trusted people who are authorized to receive them.</p>
       <div class="form-grid two-col">
         <label>Medicare / insurance name<input type="text"></label>
         <label>Member ID / group information<input type="text"></label>
@@ -97,6 +123,7 @@
 
     <section class="tool-card">
       <h2>Home access and household needs</h2>
+      <p class="tool-note">Only share keys, door codes, lockbox information, and pet care details with people your parent trusts or has authorized.</p>
       <div class="form-grid two-col">
         <label>Spare key / lockbox / door code<input type="text"></label>
         <label>Trusted neighbor / nearby helper<input type="text"></label>
@@ -122,5 +149,20 @@
 </main>
 <footer class="footer"><div class="footer-inner"><strong>Parent Stay Home</strong><p class="small">Practical resources, checklists, and next steps for adult children and caregivers helping an aging parent remain safely at home for as long as reasonably possible.</p><p class="small">Listings are informational and are not endorsements. This site provides general information only and is not medical, legal, financial, or care-management advice.</p><p><a href="/provider-submission/">Submit a resource</a> · <a href="/privacy-policy/">Privacy</a> · <a href="/terms-disclaimer/">Terms & Disclaimer</a></p></div></footer>
 <script src="/assets/script.js"></script>
+<script>
+document.addEventListener('click', function (event) {
+  const button = event.target.closest('.add-row-btn');
+  if (!button) return;
+  const table = document.getElementById(button.dataset.table);
+  if (!table) return;
+  const tbody = table.querySelector('tbody');
+  const firstRow = tbody.querySelector('tr');
+  const row = firstRow.cloneNode(true);
+  const rowNumber = tbody.children.length + 1;
+  row.querySelector('td').textContent = rowNumber;
+  row.querySelectorAll('input').forEach(input => { input.value = ''; });
+  tbody.appendChild(row);
+});
+</script>
 </body>
 </html>
