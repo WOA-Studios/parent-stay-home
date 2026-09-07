@@ -1,17 +1,18 @@
-# Parent Stay Home V1 - Important Papers Checklist update
+# Parent Stay Home - Important Papers Checklist v2
 
-This package adds the Important Papers Checklist as the second Get Organized tool.
+Update package for ParentStayHome.com.
 
-What changed:
-- Replaces the placeholder Important Papers page with a full local-only web tool.
-- Adds a downloadable blank PDF at `/assets/downloads/Important_Papers_Checklist_for_Aging_Parents.pdf`.
-- Includes a document tracker table and add-another-row functionality on the web page.
-- Adds privacy, legal, financial, medical, benefits, digital-access, and sensitive-information safety notes.
-- Preserves the current Parent Stay Home site structure, Rev 8 listing data, search behavior, blue accents, and emergency information tool.
+## Changes
+- Updated Important Papers Checklist document tracker:
+  - Exists field is now a Yes / No / Not sure dropdown.
+  - Where kept and notes fields now wrap and auto-expand.
+  - Pressing Enter in the tracker moves to the same field in the next row; Shift+Enter keeps a line break.
+  - Add another document row still works and focuses the new row.
+- Split home address into street address, city, and state/ZIP.
+- Compartmentalized funeral, cemetery, and memorial contacts.
+- Added/kept protection notes throughout the tool.
+- Updated downloadable PDF to match the improved structure.
 
-Deploy:
-1. Extract the ZIP.
-2. Upload the extracted contents to the existing `parent-stay-home` GitHub repository root.
-3. Allow GitHub to replace existing files.
-4. Commit with: `Add Important Papers Checklist tool`.
-5. Let Cloudflare redeploy automatically.
+## Deploy
+Upload the extracted contents to the existing GitHub repository root and allow replacements.
+Suggested commit message: `Improve Important Papers Checklist fields`
