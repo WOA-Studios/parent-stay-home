@@ -111,7 +111,27 @@
     filter();
   }
 
+
+
+  function setupEmailSubmission(){
+    const wrap = document.querySelector('[data-email-submission]');
+    const button = document.querySelector('[data-compose-email]');
+    if(!wrap || !button) return;
+    button.addEventListener('click', function(){
+      const fields = Array.from(wrap.querySelectorAll('[data-field]'));
+      const lines = fields.map(function(field){
+        const label = field.getAttribute('data-field') || 'Field';
+        const value = (field.value || '').trim();
+        return label + ': ' + value;
+      });
+      const subject = 'Provider/resource submission for Parent Stay Home';
+      const body = 'Please review this suggested provider or resource for Parent Stay Home.\n\n' + lines.join('\n') + '\n\nSubmitted from parentstayhome.com';
+      window.location.href = 'mailto:hello@parentstayhome.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function(){
+    setupEmailSubmission();
     formatMetaBlocks();
     ensureSearchPanel();
     applyQueryParam();

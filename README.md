@@ -43,3 +43,8 @@ Updated provider data from Rev 7 CSV, added homepage resource search, preserved 
 - Excluded listings marked `Do Not Publish` from public site data.
 - Preserved homepage search, “Where to start” cards, blue accents, address formatting, and eligibility/cost bullet formatting.
 - Added a site-ready Rev 8 CSV copy in `assets/`.
+
+
+## Form and Privacy Polish
+- Provider submission page no longer uses a mailto form action. It now opens an email draft from a button click to avoid browser insecure-form warnings.
+- Privacy page starter language was replaced with cleaner launch-ready copy.
