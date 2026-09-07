@@ -1,50 +1,20 @@
-# Parent Stay Home — V1 Starter Site
+# Parent Stay Home V1 - Emergency Information Tool
 
-This is a static HTML/CSS/JavaScript starter site for ParentStayHome.com.
+This package adds the Parent Emergency Information Sheet to the existing Parent Stay Home static site.
 
-## What is included
-- Homepage
-- Find Help landing page
-- Category pages populated from the Rev 6 Master Directory CSV
-- Get Organized landing page and starter tool pages
-- Guides landing page and starter guide pages
-- About, Contact, Provider Submission, Privacy, and Terms/Disclaimer pages
-- `assets/listings.json` and a copy of the Rev 6 CSV
-- `sitemap.xml` and `robots.txt`
+## What changed
 
-## Suggested deployment
-1. Create a new GitHub repository, for example `parentstayhome`.
-2. Upload all files and folders from this ZIP into the repository root.
-3. In Cloudflare Pages, connect the repository.
-4. Use build command: leave blank.
-5. Use output directory: `/` or leave blank depending on Cloudflare prompt.
-6. Add the custom domain: `parentstayhome.com`.
+- Replaces the placeholder Parent Emergency Information Sheet page with a full local-only HTML tool.
+- Adds a Download Blank PDF button.
+- Adds a Print / Save as PDF button.
+- Adds privacy language explaining that Parent Stay Home does not receive, save, or store information typed into the tool.
+- Adds a blank printable PDF at `/assets/downloads/Parent_Emergency_Information_Sheet.pdf`.
+- Preserves the existing directory, search, provider submission, privacy, and styling updates.
 
-## Before public launch
-- Replace `hello@parentstayhome.com` once email is set up.
-- Review Privacy and Terms/Disclaimer pages.
-- Confirm all provider links and phone numbers one more time.
-- Decide whether to index immediately or use a temporary noindex while final polish is completed.
+## Deployment
 
+Upload all extracted files and folders to the existing `parent-stay-home` GitHub repository root, replacing existing files when prompted.
 
-## Polish Pass 2
+Suggested commit message:
 
-Updated provider data from Rev 7 CSV, added homepage resource search, preserved searchable listing pages, and refreshed listing cards from the corrected Master Directory.
-
-
-## Polish Pass 3
-- Shifted accent color from green to a calm, soulful blue.
-- Added homepage “Where to start” decision cards.
-- Added common-search chips beneath the homepage search field.
-
-
-## Polish Pass 4
-- Updated provider data from Rev 8 FinalAudit workbook.
-- Excluded listings marked `Do Not Publish` from public site data.
-- Preserved homepage search, “Where to start” cards, blue accents, address formatting, and eligibility/cost bullet formatting.
-- Added a site-ready Rev 8 CSV copy in `assets/`.
-
-
-## Form and Privacy Polish
-- Provider submission page no longer uses a mailto form action. It now opens an email draft from a button click to avoid browser insecure-form warnings.
-- Privacy page starter language was replaced with cleaner launch-ready copy.
+`Add Parent Emergency Information Sheet`
