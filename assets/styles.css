@@ -25,3 +25,7 @@
 .quick-chips a:hover{border-color:#b7cad0;background:#e4f0f3}
 .hero-card h2{font-size:1.55rem;line-height:1.1;letter-spacing:-.03em;margin:0 0 12px}
 @media(max-width:860px){.where-start{margin-top:12px}}
+
+.lead-sm{font-size:1.08rem;line-height:1.6;color:var(--muted);max-width:760px;margin-top:-8px}
+.search-first{padding-top:40px}
+.filter-status{font-weight:800;color:var(--blue-deep);margin-top:12px}

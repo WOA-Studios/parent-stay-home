@@ -62,7 +62,13 @@
     if(q && !search.value){
       search.value = q;
       const target = document.querySelector('[data-search]');
-      if(target){ setTimeout(function(){ target.focus({preventScroll:true}); }, 10); }
+      if(target){
+        setTimeout(function(){
+          target.focus({preventScroll:true});
+          const section = target.closest('.section') || target;
+          section.scrollIntoView({behavior:'smooth', block:'start'});
+        }, 80);
+      }
     }
   }
 
