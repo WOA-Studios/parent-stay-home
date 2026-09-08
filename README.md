@@ -24,3 +24,7 @@ Adds a full Home Safety Checklist web tool and downloadable blank PDF at `/get-o
 ## Update: Home Safety Checklist v2
 
 Capitalizes Quick Safety Scan, changes Room-by-Room styling, adds an overflow notes box, and highlights the Action Tracker priority option Now in red when selected. Updates the downloadable PDF to match.
+
+## Long-Distance Caregiving Checklist
+
+Adds the local-only Long-Distance Caregiving Checklist tool and downloadable blank PDF, including medical communication access and HIPAA release tracking, local support contacts, home access, daily needs, and action tracker sections.
