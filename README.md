@@ -34,3 +34,6 @@ Update: Added an “If I cannot reach my parent” just-in-case planning section
 
 
 Update: Long-Distance Caregiving Checklist v3 adds separate name, phone, and notes slots in the unreachable-parent planning section.
+
+
+Update: Long-distance checklist v4 widens name fields in the unreachable-parent planning cards and converts those name fields to wrapping/auto-expanding textareas so longer names stay readable.

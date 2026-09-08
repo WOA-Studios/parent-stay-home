@@ -55,3 +55,9 @@
 .mini-field-grid .wide{grid-column:1/-1;}
 @media (max-width:720px){.mini-field-grid{grid-template-columns:1fr;}}
 @media print{.mini-contact-card{break-inside:avoid;box-shadow:none}.mini-field-grid{grid-template-columns:1fr 1fr}.mini-field-grid .wide{grid-column:1/-1}}
+
+.mini-field-grid.contact-wide-name{grid-template-columns:minmax(0,1.55fr) minmax(150px,.8fr);}
+.mini-field-grid.contact-wide-name .name-field textarea{min-height:46px;resize:none;overflow:hidden;}
+.mini-field-grid.contact-wide-name .phone-field input{min-height:46px;}
+@media (max-width:720px){.mini-field-grid.contact-wide-name{grid-template-columns:1fr;}}
+@media print{.mini-field-grid.contact-wide-name{grid-template-columns:1.55fr .8fr}.mini-field-grid.contact-wide-name .name-field textarea{min-height:34px}}
