@@ -28,3 +28,6 @@ Capitalizes Quick Safety Scan, changes Room-by-Room styling, adds an overflow no
 ## Long-Distance Caregiving Checklist
 
 Adds the local-only Long-Distance Caregiving Checklist tool and downloadable blank PDF, including medical communication access and HIPAA release tracking, local support contacts, home access, daily needs, and action tracker sections.
+
+
+Update: Added an “If I cannot reach my parent” just-in-case planning section with escalation guidance and non-emergency contact fields.
