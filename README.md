@@ -37,3 +37,6 @@ Update: Long-Distance Caregiving Checklist v3 adds separate name, phone, and not
 
 
 Update: Long-distance checklist v4 widens name fields in the unreachable-parent planning cards and converts those name fields to wrapping/auto-expanding textareas so longer names stay readable.
+
+## Financial Information Checklist
+Added full local-only Financial Information Checklist web tool and downloadable blank PDF.
