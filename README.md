@@ -40,3 +40,7 @@ Update: Long-distance checklist v4 widens name fields in the unreachable-parent 
 
 ## Financial Information Checklist
 Added full local-only Financial Information Checklist web tool and downloadable blank PDF.
+
+
+## Financial checklist print color fix
+Updates print CSS so selected Now priority fields retain red/pink styling in print/PDF previews where the browser allows background graphics/colors.
