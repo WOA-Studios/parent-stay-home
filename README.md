@@ -31,3 +31,6 @@ Adds the local-only Long-Distance Caregiving Checklist tool and downloadable bla
 
 
 Update: Added an “If I cannot reach my parent” just-in-case planning section with escalation guidance and non-emergency contact fields.
+
+
+Update: Long-Distance Caregiving Checklist v3 adds separate name, phone, and notes slots in the unreachable-parent planning section.
