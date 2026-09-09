@@ -50,3 +50,7 @@ Update: Added full guide page for 'What to Do When Your Parent Starts Needing He
 
 
 Update: Polished Guides landing page with Start Here path, guide cards by concern, suggested reading order, and general information note.
+
+
+## Update
+- Adds a homepage start-here guide callout linking to /guides/what-to-do-when-parent-starts-needing-help/.
