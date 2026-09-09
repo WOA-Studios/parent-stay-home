@@ -61,3 +61,9 @@
 .mini-field-grid.contact-wide-name .phone-field input{min-height:46px;}
 @media (max-width:720px){.mini-field-grid.contact-wide-name{grid-template-columns:1fr;}}
 @media print{.mini-field-grid.contact-wide-name{grid-template-columns:1.55fr .8fr}.mini-field-grid.contact-wide-name .name-field textarea{min-height:34px}}
+
+/* Get Organized landing page polish */
+.tool-grid{align-items:stretch}.tool-card-link{display:flex;flex-direction:column}.tool-card-link .btn{margin-top:auto;width:max-content}.soft-path{background:#f8f2e8}.numbered-path{padding-left:1.35rem}.numbered-path li{margin:.55rem 0}.tool-intro .notice{align-self:start}
+@media(max-width:900px){.tool-grid{grid-template-columns:1fr 1fr}.tool-card-link .btn{width:100%}}
+@media(max-width:640px){.tool-grid{grid-template-columns:1fr}.tool-card-link .btn{width:100%}}
+@media print{.tool-card-link .btn{display:none!important}.tool-grid{display:block}.tool-card-link{break-inside:avoid;margin-bottom:10px}.soft-path{background:#fff}}
