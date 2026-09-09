@@ -44,3 +44,6 @@ Added full local-only Financial Information Checklist web tool and downloadable 
 
 ## Financial checklist print color fix
 Updates print CSS so selected Now priority fields retain red/pink styling in print/PDF previews where the browser allows background graphics/colors.
+
+
+Update: Added full guide page for 'What to Do When Your Parent Starts Needing Help'.
