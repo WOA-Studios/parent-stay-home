@@ -47,3 +47,6 @@ Updates print CSS so selected Now priority fields retain red/pink styling in pri
 
 
 Update: Added full guide page for 'What to Do When Your Parent Starts Needing Help'.
+
+
+Update: Polished Guides landing page with Start Here path, guide cards by concern, suggested reading order, and general information note.

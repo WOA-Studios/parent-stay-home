@@ -67,3 +67,9 @@
 @media(max-width:900px){.tool-grid{grid-template-columns:1fr 1fr}.tool-card-link .btn{width:100%}}
 @media(max-width:640px){.tool-grid{grid-template-columns:1fr}.tool-card-link .btn{width:100%}}
 @media print{.tool-card-link .btn{display:none!important}.tool-grid{display:block}.tool-card-link{break-inside:avoid;margin-bottom:10px}.soft-path{background:#fff}}
+
+/* Guides landing polish */
+.feature-card{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;}
+.feature-card .btn{white-space:nowrap;}
+.guide-hero .button-row{margin-top:1.5rem;}
+@media (max-width: 700px){.feature-card{display:block}.feature-card .btn{margin-top:1rem;display:inline-block;white-space:normal;}}
