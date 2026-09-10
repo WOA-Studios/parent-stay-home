@@ -1,15 +1,11 @@
-# Parent Stay Home — Homepage Button Text Fix
+# Parent Stay Home — Can My Parent Safely Stay Home Guide
 
-This update changes the homepage start-here guide button text from:
+Upload the extracted contents to the existing `parent-stay-home` GitHub repository.
 
-"Read the start-here guide"
+Commit message:
 
-to:
+`Build Can My Parent Safely Stay Home guide`
 
-"Start with this guide"
+This package replaces the placeholder guide page at:
 
-Upload these extracted files to the root of the existing `parent-stay-home` GitHub repository and allow `index.html` to be replaced.
-
-Suggested commit message:
-
-`Update homepage guide button text`
+`/guides/can-my-parent-safely-stay-home/`
