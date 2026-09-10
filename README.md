@@ -1,11 +1,11 @@
-# Parent Stay Home — Services Guide
+# Parent Stay Home — Hospital Discharge Guide
 
 Upload the extracted contents to the existing `parent-stay-home` GitHub repository.
 
 Commit message:
 
-`Build Services That Can Help guide`
+`Build hospital discharge guide`
 
 This package replaces the placeholder guide page at:
 
-`/guides/services-that-help-aging-parents-stay-home/`
+`/guides/help-after-hospital-discharge/`
