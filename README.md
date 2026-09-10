@@ -1,11 +1,11 @@
-# Parent Stay Home — Can My Parent Safely Stay Home Guide
+# Parent Stay Home — Services Guide
 
 Upload the extracted contents to the existing `parent-stay-home` GitHub repository.
 
 Commit message:
 
-`Build Can My Parent Safely Stay Home guide`
+`Build Services That Can Help guide`
 
 This package replaces the placeholder guide page at:
 
-`/guides/can-my-parent-safely-stay-home/`
+`/guides/services-that-help-aging-parents-stay-home/`
