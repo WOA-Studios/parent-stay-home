@@ -1,17 +1,15 @@
-# Parent Stay Home — Parent Can’t Drive Guide Layout Fix
+# Parent Stay Home — What If I Do Not Live Nearby? Guide
 
 Upload the extracted contents to the existing `parent-stay-home` GitHub repository.
 
 Commit message:
 
-`Tighten driving guide safety note layout`
+`Build What If I Do Not Live Nearby guide`
 
-This package tightens the safety-note area on the guide page at:
+This package replaces the placeholder guide page at:
 
-`/guides/what-to-do-when-parent-cant-drive/`
+`/guides/what-if-i-do-not-live-nearby/`
 
-Changes:
-
-- Reduces the oversized empty space in the urgent safety note area.
-- Keeps the urgent safety note compact near the top right.
-- Adds a helpful next-step card about listing what driving currently provides before replacing transportation support.
+The guide includes local support planning, medical communication/HIPAA reminders,
+an "If I cannot reach my parent" just-in-case plan, links to PSH tools and verified
+resource categories, urgent safety language, and a general information disclaimer.
