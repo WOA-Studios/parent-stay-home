@@ -1,17 +1,21 @@
-# Parent Stay Home — Long-Distance Caregiving Checklist v5
+# Parent Stay Home — Sitemap Update
 
-Upload the extracted contents to the existing `parent-stay-home` GitHub repository.
+This package updates the root `sitemap.xml` for ParentStayHome.com.
 
-Commit message:
+It contains the current core pages, Find Help category pages, all five Get Organized tools,
+and all seven completed guide pages, including:
 
-`Improve long-distance checklist date address and phone fields`
+`/guides/what-if-i-do-not-live-nearby/`
 
-This update improves the Long-Distance Caregiving Checklist by:
+## Deploy
 
-- Adding a separate Parent's date of birth field with automatic MM/DD/YYYY slash formatting.
-- Keeping Date updated and applying the same automatic date formatting.
-- Splitting State and ZIP into separate fields.
-- Splitting primary helper and best local contact phone/email fields for clearer entry.
-- Automatically formatting phone numbers as `(555) 555-5555` in the web tool.
-- Applying phone formatting to local support contacts, just-in-case contacts, medical communication contacts, and local non-emergency numbers.
-- Updating the downloadable blank PDF to match the cleaner field structure.
+Upload `sitemap.xml` to the ROOT of the existing `parent-stay-home` GitHub repository and
+allow it to replace the existing file.
+
+Suggested commit message:
+
+`Update sitemap for Search Console`
+
+After Cloudflare finishes deploying, return to Google Search Console > Sitemaps and submit:
+
+`sitemap.xml`
