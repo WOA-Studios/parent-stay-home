@@ -8,7 +8,20 @@
 .mda-cover-title em{color:#dba74f;font-weight:600}
 .mda-cover-rule{height:2px;width:58%;background:#dba74f;margin:24px 0 16px}
 .mda-guide-cover p{font-family:Georgia,serif;font-size:1rem;line-height:1.35;margin:0;max-width:90%}
-.mda-cover-house{margin:auto 0 16px;width:128px;height:86px;border-radius:50% 50% 12px 12px;background:radial-gradient(circle at 50% 34%,#f4c76e 0 42%,transparent 43%),linear-gradient(140deg,#285968,#153d49);display:grid;place-items:center;font-size:3.8rem;color:#ffe3a3}
+.mda-cover-scene{position:relative;width:100%;height:170px;margin:auto 0 14px;overflow:hidden;border-radius:18px;background:linear-gradient(180deg,transparent 0 22%,#124d5c 23% 100%)}
+.mda-moon{position:absolute;left:50%;top:8px;transform:translateX(-50%);width:112px;height:112px;border-radius:50%;background:#f2c460;box-shadow:0 0 22px rgba(242,196,96,.18)}
+.mda-hill{position:absolute;border-radius:50% 50% 0 0 / 100% 100% 0 0}
+.mda-hill-back{width:135%;height:82px;left:-18%;bottom:30px;background:#3d7180;transform:rotate(-2deg)}
+.mda-hill-front{width:150%;height:96px;left:-24%;bottom:-18px;background:#0f4654;transform:rotate(2deg)}
+.mda-path{position:absolute;left:50%;bottom:-4px;transform:translateX(-50%) rotate(-2deg);width:72px;height:118px;background:linear-gradient(180deg,#f2d99a,#e7c374);clip-path:polygon(44% 0,58% 0,72% 24%,64% 48%,86% 100%,10% 100%,45% 49%,33% 24%)}
+.mda-house{position:absolute;left:58%;top:65px;width:70px;height:58px;transform:translateX(-50%);filter:drop-shadow(0 5px 8px rgba(0,0,0,.25))}
+.mda-roof{position:absolute;left:4px;top:0;width:0;height:0;border-left:31px solid transparent;border-right:31px solid transparent;border-bottom:28px solid #173d49}
+.mda-home-body{position:absolute;left:12px;top:25px;width:48px;height:31px;background:#244e5a}
+.mda-door{position:absolute;left:21px;top:36px;width:12px;height:20px;background:#ffd77d;box-shadow:0 0 10px rgba(255,215,125,.85)}
+.mda-window{position:absolute;right:15px;top:35px;width:12px;height:12px;background:#ffd77d;box-shadow:0 0 8px rgba(255,215,125,.75)}
+.mda-plant{position:absolute;bottom:24px;color:#d8a74f;font-size:2.2rem;opacity:.95}
+.mda-plant-left{left:12px;transform:rotate(-16deg)}
+.mda-plant-right{right:12px;transform:rotate(16deg)}
 .mda-cover-brand{font-family:Georgia,serif;color:#e0bc69;font-size:1.35rem;letter-spacing:.08em;margin-bottom:6px}
 .mda-guide-cover-card .small{margin:12px 4px 2px;text-align:center}
 .mda-urgent{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;background:#f3eadc;border:1px solid #dcc9ad;border-radius:24px;padding:26px;margin:12px 0 26px}
