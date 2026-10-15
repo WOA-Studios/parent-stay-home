@@ -898,5 +898,23 @@
     "date_verified": "8/31/2026",
     "verification_status": "Verified",
     "notes": ""
+  },
+  {
+    "name": "Frederick County Division of Aging and Independence",
+    "category": "Local Aging Resources",
+    "tags": "Senior Services, Caregiver Support, Health Insurance Assistance, Ombudsman, Medicaid Assistance, Nutrition, Senior Centers, Disability Services, Veterans, In-Home Services",
+    "description": "Helps older adults, people with disabilities, caregivers, and Veterans connect with local programs, services, referrals, and personalized assistance that support independence and community living.",
+    "area_served": "Frederick County",
+    "website": "https://www.frederickcountymd.gov/DAI",
+    "phone": "301-600-1234",
+    "email": "DAI@FrederickCountyMD.gov",
+    "address": "1440 Taney Avenue\nFrederick, MD 21702",
+    "eligibility": "Eligibility varies by program. Please call 301-600-1234 for more information.",
+    "cost_fees": "No Cost",
+    "organization_type": "Government",
+    "source": "https://www.frederickcountymd.gov/DAI",
+    "date_verified": "10/14/2026",
+    "verification_status": "Verified",
+    "notes": "Directly verified by Frederick County Division of Aging and Independence."
   }
 ]
