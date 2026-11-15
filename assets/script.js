@@ -54,6 +54,22 @@
     listingHeading.insertAdjacentElement('afterend', panel);
   }
 
+  function ensureCoverageNotice(){
+    const cards = document.querySelectorAll('[data-listing-card]');
+    if(!cards.length || !window.location.pathname.startsWith('/find-help/')) return;
+    if(document.querySelector('[data-coverage-notice]')) return;
+    const heading = Array.from(document.querySelectorAll('h2')).find(function(h){
+      const t = h.textContent.toLowerCase();
+      return t.includes('verified listings') || t.includes('search all verified listings');
+    });
+    if(!heading) return;
+    const note = document.createElement('div');
+    note.className = 'coverage-note';
+    note.dataset.coverageNotice = 'true';
+    note.innerHTML = '<strong>Where we currently serve:</strong> Parent Stay Home is building its directory county by county, beginning with selected areas of Maryland. Not every Maryland county is covered yet. We add resources as we research and verify them. <a href="/contact/">Suggest a location or service</a>.';
+    heading.insertAdjacentElement('beforebegin', note);
+  }
+
   function applyQueryParam(){
     const search = document.querySelector('[data-search]');
     if(!search) return;
@@ -100,7 +116,11 @@
         if(ok) shown += 1;
       });
       if(q || c){
-        status.textContent = shown ? (shown + ' matching listing' + (shown === 1 ? '' : 's') + ' shown.') : 'No matching listings found. Try a broader word or browse the category cards above.';
+        if(shown){
+          status.textContent = shown + ' matching listing' + (shown === 1 ? '' : 's') + ' shown.';
+        } else {
+          status.innerHTML = '<div class="no-results"><strong>We don\\'t have a matching listing yet.</strong><p>We may not have researched your parent\\'s location or the service you need. Try another search term, or use these resources to find help now:</p><ul><li>In Maryland: <a href="https://aging.maryland.gov/programs-and-services/maryland-access-point" target="_blank" rel="noopener">Maryland Access Point</a></li><li>Anywhere in the U.S.: <a href="https://eldercare.acl.gov/home" target="_blank" rel="noopener">Eldercare Locator</a></li></ul><a href="/contact/">Suggest a location or service for future research</a>.</div>';
+        }
       } else {
         status.textContent = '';
       }
@@ -134,6 +154,7 @@
     setupEmailSubmission();
     formatMetaBlocks();
     ensureSearchPanel();
+    ensureCoverageNotice();
     applyQueryParam();
     setupFilters();
   });
