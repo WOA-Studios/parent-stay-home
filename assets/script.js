@@ -119,7 +119,7 @@
         if(shown){
           status.textContent = shown + ' matching listing' + (shown === 1 ? '' : 's') + ' shown.';
         } else {
-          status.innerHTML = '<div class="no-results"><strong>We don\\'t have a matching listing yet.</strong><p>We may not have researched your parent\\'s location or the service you need. Try another search term, or use these resources to find help now:</p><ul><li>In Maryland: <a href="https://aging.maryland.gov/programs-and-services/maryland-access-point" target="_blank" rel="noopener">Maryland Access Point</a></li><li>Anywhere in the U.S.: <a href="https://eldercare.acl.gov/home" target="_blank" rel="noopener">Eldercare Locator</a></li></ul><a href="/contact/">Suggest a location or service for future research</a>.</div>';
+          status.innerHTML = '<div class="no-results"><strong>We don\'t have a matching listing yet.</strong><p>We may not have researched your parent\'s location or the service you need. Try another search term, or use these resources to find help now:</p><ul><li>In Maryland: <a href="https://aging.maryland.gov/programs-and-services/maryland-access-point" target="_blank" rel="noopener">Maryland Access Point</a></li><li>Anywhere in the U.S.: <a href="https://eldercare.acl.gov/home" target="_blank" rel="noopener">Eldercare Locator</a></li></ul><a href="/contact/">Suggest a location or service for future research</a>.</div>';
         }
       } else {
         status.textContent = '';
