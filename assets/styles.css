@@ -73,3 +73,12 @@
 .feature-card .btn{white-space:nowrap;}
 .guide-hero .button-row{margin-top:1.5rem;}
 @media (max-width: 700px){.feature-card{display:block}.feature-card .btn{margin-top:1rem;display:inline-block;white-space:normal;}}
+
+/* Helpful navigation when directory coverage is incomplete */
+.coverage-note{background:#f3eadc;border:1px solid #dcc9ad;border-radius:16px;padding:14px 18px;margin:0 0 20px;color:#55412a;line-height:1.6}
+.coverage-note strong{display:block;color:var(--ink);margin-bottom:4px}
+.filter-status .no-results{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;margin:12px 0 18px;color:var(--ink);font-weight:400;line-height:1.55}
+.filter-status .no-results strong{display:block;font-size:1.07rem;margin-bottom:8px}
+.filter-status .no-results p{margin:0 0 10px}
+.filter-status .no-results ul{margin:0 0 12px;padding-left:22px}
+.filter-status .no-results li{margin-bottom:6px}
